@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order component</title>
+    <style>
+        *{
+            margin: 0;
+            
+        }
+        body{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            }        
+        .container{
+            margin-left: 26em;
+            margin-top: 2em;
+            border-radius: 20px;
+            width: 23em;
+            position: absolute;
+            box-shadow: 0 0 20px rgb(192, 189, 189);
+        }
+        img{
+            margin: 0px;
+            width: 23em;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            display: block;
+            
+
+        }
+        .middle{
+            text-align: center;
+            height: 22em;
+            margin: 0px;
+            background: rgb(255, 255, 255);
+            padding-top: 2.3em;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-left: 2em;
+            padding-right: 1.5em;
+        } 
+        .middle h3{
+            font-family: krona one;
+            font-size: 1.2em;
+            font-weight:800;
+            color: hsl(223, 47%, 23%);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .middle p{
+            margin-top: 1.3em;
+            font-size: 15px;
+            color:hsl(224, 23%, 55%);
+            line-height: 25px;
+            margin-right: 4px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .music{
+            display: flex;
+            height: 2.7em;
+            width: 17em;
+            padding: 20px;
+            align-items: center;
+            background-color: hsl(225, 100%, 98%);
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 0px;
+            margin-left: 7px;
+            margin-right: 0px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        }
+        .button{
+            width: 20.5em;
+            height: 3em;
+            margin-top: 5px;
+            background: hsl(245, 75%, 52%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 0 20px rgb(192, 189, 189);
+        }
+        .button:active{
+            cursor: pointer;
+            background: hsl(245, 59%, 59%);;
+        }
+        .button:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+        button{
+            border: none;
+            background:rgb(255, 255, 255); 
+            color: hsl(245, 74%, 45%);
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        button:active{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+            <img src="illustration-hero.svg">
+        <div class="middle">
+            <h3>Order Summary</h3>
+            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <br>
+            <div class="music">
+                <img src="icon-music.svg" style="width: 2.5em; margin-right: 18px; margin-top:0px ;">
+                <p style="margin-left:1px; margin-right: 0px; margin-bottom: 19px; font-family: -apple-system,WSS;"><span style="font-weight: 700; color:hsl(223, 47%, 23%) ;">Annual Plan</span><br>$59.99/year</p>
+                <a href="#" style="margin-left: 72px; margin-top: 5px; font-weight: bold; font-size: 13px; cursor: pointer;">Change</a>
+            </div><br>
+            <button class="button">Proceed to Payment</button><br>
+            <br>
+            <button>Cancel Order</button>
+        </div>
+    </section>
+</body>
+</html>
